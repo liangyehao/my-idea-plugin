@@ -1,0 +1,40 @@
+<idea-plugin>
+  <id>com.your.company.unique.plugin.id</id>
+  <name>liangyehao translattion</name>
+  <version>1.0</version>
+  <vendor email="1094311509@qq.com" url="https://github.com/liangyehao">liangyehao</vendor>
+
+  <description><![CDATA[
+      有道翻译插件.<br>
+      <em>created by liangyehao</em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      liangyehao.<br>
+      <em>liangyehao</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="MyTranslationAction" class="com.liang.MyTranslationAction" text="MyTranslationAction"
+            description="MyTranslationAction">
+      <add-to-group group-id="ToolsMenu" anchor="first"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt N" second-keystroke="ctrl N"/>
+    </action>
+  </actions>
+
+</idea-plugin>
